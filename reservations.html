@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+    <title>Pacific Trails Resort :: Reservations</title>
+    <link rel="stylesheet" href="pacific.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Pacific Trails Resort</h1>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="yurts.html">Yurts</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2>Reservations at Pacific Trails</h2>
+
+        <h3>Contact Us Today!</h3>
+
+            <form method="post" action="https://webdevbasics.net/scripts/pacific.php" >
+                <label for="myFName">*First Name</label>
+                <input type="text" id="myFName" name="myFName" required>
+                <label for="myLName">*Last Name</label>
+                <input type="text" id="myLName" name="myLName" required>
+                <label for="myEmail">*Email</label>
+                <input type="email" id="myEmail" name="myEmail" size="35" required>
+                <label for="myPhone">Phone Number</label>
+                <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+                <label for="myArrival">Arrival Date</label>
+                <input type="date" id="myArrival" name="myArrival">
+                <label for="myNights">Nights</label>
+                <input type="number" id="myNights" name="myNights" min="1" max="14">
+                <label for="myComments">*Comments:</label>
+                <textarea id="myComments" name="myComments" rows="2" cols="30" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+
+        <div>
+            <p><span class="Resort" id="contact">Pacific Trails Resort</span><br>12010 Pacific Trails Road<br>Zephyr, CA 955555</p>
+
+            <p><a id="mobile" href="tel:888-555-5555">888-555-5555</a>
+                <span id="desktop">888-555-55555</span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2018 Pacific Trails Resort<br><a href="nathaniel@damour.com">nathaniel@damour.com</a></p>
+    </footer>
+</div>
+</body>
+</html>
